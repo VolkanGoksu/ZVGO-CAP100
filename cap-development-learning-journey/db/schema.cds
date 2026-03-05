@@ -1,14 +1,19 @@
 namespace com.sap.learning;
 
-entity Books {
-    key ID          : UUID;
+using {
+    cuid,
+    managed
+} from '@sap/cds/common';
+
+entity Books : cuid{
+
         title       : String(255);
         author      : Association to Authors;
         genre       : Genre;
         publCountry : String(3);
         stock       : noOfBooks;
         price       : Price;
-        isHardCover : Boolean;
+        isHardcover : Boolean;
 
 }
 
@@ -24,8 +29,8 @@ type Price {
     currency : String(3);
 }
 
-entity Authors {
-    key ID          : UUID;
+entity Authors : cuid , managed{
+
         name        : String(100);
         dateOfBirth : Date;
         dateOfDeath : Date;

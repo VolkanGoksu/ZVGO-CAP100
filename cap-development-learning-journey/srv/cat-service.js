@@ -30,7 +30,7 @@ async reduceStock(req){
     
     const b = await SELECT.one.from(Books).where({ID:book}).columns(b=> {b.stock});
     if(!b){
-        return req.error(`${book}idli kitap mevcut değil`);
+        return req.error('BOOK_NOT_FOUND',[book]);
     }
     let { stock } = b;
     if(quantity > stock){

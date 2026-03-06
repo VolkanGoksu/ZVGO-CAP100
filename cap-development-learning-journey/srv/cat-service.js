@@ -1,4 +1,5 @@
 const cds = require('@sap/cds');
+const { UPDATE, SELECT } = require('@sap/cds/lib/ql/cds-ql');
 
 class CatalogService extends cds.ApplicationService{
     init(){
@@ -19,15 +20,24 @@ grantDiscount(req) {
      }
 }
 
-reduceStock(req){
+async reduceStock(req){
     const { Books } = this.entities;
     const { book , quantity} = req.data;
 
     if(quantity < 1){
         return req.error('en az 1 miktar olmalı');
     }
-    let stock = 10;
-    return { stock };
+    
+    const b = await SELECT.one.from(Books).where({ID:book}).columns(b=> {b.stock});
+    if(!b){
+        return req.error(`${book}idli kitap mevcut değil`);
+    }
+    let { stock } = b;
+    if(quantity > stock){
+        return req.error(`${quantity} miktar stoğu aşıyor`)
+    }
+    await UPDATE(Books).where({ID:book}).with({stock: { '-=':quantity}});
+    return {stock:stock - quantity};
 }
 }
 

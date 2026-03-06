@@ -22,4 +22,9 @@ service CatalogService @(path:'/cat') { // Boşluğu sildik
         stock,
         author
     };
+
+    action submitOrder(book : db.Books:ID , quantity : Integer) returns{
+    stock : db.Books:stock
 }
+};
+

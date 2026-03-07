@@ -1,6 +1,6 @@
-ID,Title,author_ID,createdAt,createdBy,modifiedAt,modifiedBy
-7362095e-2d36-4bad-afb0-3d89e29220a4,Title-7362095,21758027-3842-4228-ab18-c88a62d83940,2006-09-30T00:00:00.000Z,createdBy.4dsmn@example.org,2009-01-15T00:00:00.000Z,modifiedBy.4dsmn@example.com
-73620964-1d2d-48dc-9943-32fa2f19ac63,Title-7362096,21758027-3842-4228-ab18-c88a62d83940,2007-10-19T00:00:00.000Z,createdBy.4dsmo@example.org,2009-06-16T00:00:00.000Z,modifiedBy.4dsmo@example.com
-73620979-6de4-45c1-9a74-5d70d6bb6895,Title-7362097,21758027-3842-4228-ab18-c88a62d83940,2023-02-27T00:00:00.000Z,createdBy.4dsmp@example.net,2000-04-09T00:00:00.000Z,modifiedBy.4dsmp@example.com
-73620980-5f13-4c9e-8b63-520ce28f669b,Title-7362098,21758027-3842-4228-ab18-c88a62d83940,2004-11-21T00:00:00.000Z,createdBy.4dsmq@example.com,2003-12-10T00:00:00.000Z,modifiedBy.4dsmq@example.org
-73620994-c456-4b84-b255-8cded3382215,Title-7362099,21758027-3842-4228-ab18-c88a62d83940,2018-01-02T00:00:00.000Z,createdBy.4dsmr@example.org,2012-11-06T00:00:00.000Z,modifiedBy.4dsmr@example.com
+ID,Title,author_ID,genre,publishedAt,pages,price,createdAt,createdBy,modifiedAt,modifiedBy
+29455590-7a2b-4049-ab1e-5a0f27109123,Title-29455590,15687684-af9b-4dfd-ab9c-3d7fd62d2cef,genre-29455590,2003-01-21,45,7389653.27,2022-04-08T00:00:00.000Z,createdBy.hjc2u@example.net,2014-01-22T00:00:00.000Z,modifiedBy.hjc2u@example.com
+29455591-755f-4107-b238-7447cb037287,Title-29455591,15687684-af9b-4dfd-ab9c-3d7fd62d2cef,genre-29455591,2016-06-20,85,2367223.07,2014-07-08T00:00:00.000Z,createdBy.hjc2v@example.org,2003-10-16T00:00:00.000Z,modifiedBy.hjc2v@example.org
+29455592-ce3f-4e9a-a570-f66d8c3dbbd4,Title-29455592,15687684-af9b-4dfd-ab9c-3d7fd62d2cef,genre-29455592,2003-06-04,60,2455789.25,2016-09-29T00:00:00.000Z,createdBy.hjc2w@example.org,2010-09-14T00:00:00.000Z,modifiedBy.hjc2w@example.net
+29455593-9c35-4fdd-84e8-195fb8901790,Title-29455593,15687684-af9b-4dfd-ab9c-3d7fd62d2cef,genre-29455593,2019-09-30,20,5654017.15,2000-01-02T00:00:00.000Z,createdBy.hjc2x@example.net,2003-07-31T00:00:00.000Z,modifiedBy.hjc2x@example.com
+29455594-9768-45c1-85f5-b60f90206422,Title-29455594,15687684-af9b-4dfd-ab9c-3d7fd62d2cef,genre-29455594,2008-12-24,68,5828209.3,2005-07-02T00:00:00.000Z,createdBy.hjc2y@example.org,2022-12-25T00:00:00.000Z,modifiedBy.hjc2y@example.org
